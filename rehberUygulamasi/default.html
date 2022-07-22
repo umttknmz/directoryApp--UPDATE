@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehber Uygulaması</title>
+    <!-- Skeleton Css -->
+    <link rel="stylesheet" href="assets/css/skeleton/normalize.css">
+    <link rel="stylesheet" href="assets/css/skeleton/skeleton.css">
+    <link rel="stylesheet" href="assets/css/skeleton/modal-skeleton.css">
+    <!-- Kendi Css'im -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Başlık -->
+        <h4>Rehber Uygulaması</h4>
+        <form id="form-rehber">
+            <div>
+                <label for="ad">Adınız</label>
+                <input type="text" id="ad" class="u-full-width">
+            </div>
+            <div>
+                <label for="soyad">Soyadınız</label>
+                <input type="text" id="soyad" class="u-full-width">
+            </div>
+            <div>
+                <label for="mail">E-Mail Adresiniz</label>
+                <input type="text" id="mail" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" id="kaydet" value="Kaydet" class="button-primary u-full-width">
+                <input type="button" id="tTemizle" value="Tümünü Temizle" class="button-primary u-full-width">
+            </div>
+        </form>
+
+        <hr class="bilgii">
+        <!-- Tablo yapısı gelen kısım(Kaydettikten sonra oluşucak alandır.) -->
+        <div class="table">
+            <table class="u-full-width table-content">
+                <thead>
+                    <tr>
+                        <th>Adı</th>
+                        <th>Soyadı</th>
+                        <th>Email</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody class="kisi-listesi">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<!-- Java Script tanımı -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/modal.js"></script>
+</html>
